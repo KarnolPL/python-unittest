@@ -3,6 +3,9 @@ import unittest
 
 class TestClass(unittest.TestCase):
 
+    def test_case_4(self):
+        self.assertTrue('appel'.islower())
+
     def test_case_1(self):
         self.assertEqual('John Smith'.split(), ['John', 'Smith'])
 
@@ -12,5 +15,5 @@ class TestClass(unittest.TestCase):
     def test_case_3(self):
         self.assertEqual('#'.join(['sport', 'gym']), 'sport#gym')
 
-    def test_case_4(self):
-        self.assertTrue('appel'.islower())
+
+
